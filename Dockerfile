@@ -160,11 +160,11 @@ USER ${NB_UID}
 WORKDIR "${HOME}"
 
 # Install packages
-RUN curl -sSL https://raw.githubusercontent.com/NeuromatchAcademy/course-content/master/requirements.txt -o requirements.txt
+RUN curl -sSL https://raw.githubusercontent.com/arashash/NMA-offline/master/requirements.txt -o requirements.txt
 RUN pip --no-cache-dir install -r requirements.txt
 RUN rm requirements.txt
 
-RUN git clone --depth 1 https://github.com/NeuromatchAcademy/course-content
+RUN git clone --depth 1 https://github.com/arashash/NMA-offline
 
 USER ${NB_UID}
 CMD jupyter lab --ip=* --port=8888 --no-browser
