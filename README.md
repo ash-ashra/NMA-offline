@@ -1,4 +1,3 @@
-# Run Neuromatch Academy (NMA) with JupyterLab instead of Colab
 This project facilitates access to NMA content for students who like to run everything locally for various reasons, such as limited Internet or electricity access.
 
 ##  Install the only dependency
