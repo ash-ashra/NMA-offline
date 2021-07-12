@@ -1,7 +1,3 @@
-# NMA-offline
-A derivation of Neuromatch Academy (NMA) contents for offline usage
-
-# Run Neuromatch Academy (NMA) offline with JupyterLab instead of Colab
 This project facilitates access to NMA content for students who like to run everything locally for various reasons, such as limited Internet or electricity access.
 
 ##  Install the only dependency
