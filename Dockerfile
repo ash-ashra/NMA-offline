@@ -166,11 +166,16 @@ RUN pip --no-cache-dir install -r requirements.txt
 RUN rm requirements.txt
 
 RUN git clone --depth 1 https://github.com/NeuromatchAcademy/course-content
-RUN git clone --depth 1 https://github.com/arashash/NMA-offline
-RUN curl -O -J -L https://osf.io/k9fsu/download
+
 RUN mkdir videos
+
+RUN curl -O -J -L https://osf.io/k9fsu/download
 RUN unzip W1_light.zip -d videos
 RUN rm W1_light.zip
+
+RUN curl -O -J -L https://osf.io/p4mre/download
+RUN unzip W2_light.zip -d videos
+RUN rm W2_light.zip
 
 USER ${NB_UID}
 CMD jupyter lab --ip=* --port=8888 --no-browser
