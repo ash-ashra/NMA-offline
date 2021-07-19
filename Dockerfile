@@ -161,7 +161,7 @@ USER ${NB_UID}
 WORKDIR "${HOME}"
 
 # Install packages
-RUN curl -sSL https://raw.githubusercontent.com/arashash/NMA-offline/master/requirements.txt -o requirements.txt
+RUN curl -sSL https://raw.githubusercontent.com/NeuromatchAcademy/NMA-offline/master/requirements.txt -o requirements.txt
 RUN pip --no-cache-dir install -r requirements.txt
 RUN rm requirements.txt
 
